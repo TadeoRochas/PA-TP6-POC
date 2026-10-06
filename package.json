@@ -1,0 +1,19 @@
+{
+  "name": "activation-poc",
+  "version": "0.1.0",
+  "private": true,
+  "description": "POC Activacion de Servicios con Kafka - Programacion Avanzada 2026",
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "scripts": {
+    "build:libs": "npm run build -w @poc/contracts -w @poc/kafka-toolkit",
+    "build:all": "npm run build --workspaces --if-present",
+    "demo:up": "docker compose up --build",
+    "demo:down": "docker compose down -v"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

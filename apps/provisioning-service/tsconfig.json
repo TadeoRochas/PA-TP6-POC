@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "paths": {
+      "@poc/contracts": ["../../libs/contracts/dist"],
+      "@poc/kafka-toolkit": ["../../libs/kafka-toolkit/dist"]
+    }
+  },
+  "include": ["src/**/*"]
+}
